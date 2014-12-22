@@ -1,0 +1,3 @@
+https://github.com/cdlotz/signalHeatmap
+
+https://build.phonegap.com/apps/1217831/builds

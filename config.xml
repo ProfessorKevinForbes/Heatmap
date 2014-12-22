@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+	xmlns:android   = "http://schemas.android.com/apk/res/android"
+        id          = "edu.iupui.n300.signalHeatmap"
+        version     = "1.0.0" >
+
+    <name>Signal Heatmap</name>
+
+    <description>
+        Tool to show cell signal in a heatmap
+    </description>
+
+    <author href="https://github.com/cdlotz/signalHeatmap" email="cdlotz@iupui.edu">
+        Cory Lotz
+    </author>
+
+
+	<icon src="cell-signal.png" />
+	<gap:splash src="cell-signal-splash.png" />
+
+
+	<content src="signalHeatmap.html" />
+	
+	<gap:platform name="android" />
+	<gap:platform name="ios" />
+
+
+    <uses-sdk android:minSdkVersion="19"
+              android:targetSdkVersion="19"
+              android:maxSdkVersion="19" />
+
+<feature name="Geolocation">
+    <param name="android-package" value="org.apache.cordova.GeoBroker" />
+</feature>
+
+<feature name="File">
+    <param name="android-package" value="org.apache.cordova.FileUtils" />
+</feature>
+<feature name="FileTransfer">
+    <param name="android-package" value="org.apache.cordova.FileTransfer" />
+</feature>
+
+<feature name="Geolocation">
+    <param name="ios-package" value="CDVLocation" />
+</feature>
+
+
+<feature name="File">
+    <param name="ios-package" value="CDVFile" />
+</feature>
+<feature name="FileTransfer">
+    <param name="ios-package" value="CDVFileTransfer" />
+</feature>
+
+
+
+<gap:plugin name="org.apache.cordova.file" version="1.3.1" />
+<gap:plugin name="org.apache.cordova.file-transfer" version="0.4.6" />
+
+
+
+<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+
+
+</widget>
